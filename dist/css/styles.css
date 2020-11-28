@@ -10076,7 +10076,7 @@ img::-moz-selection {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #7b10a5;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -10125,7 +10125,7 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
