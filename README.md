@@ -1,4 +1,4 @@
-# [Start Bootstrap - Agency](https://startbootstrap.com/theme/agency)
+# [Gerrit's Whip Factory](https://gerritswhipfactory.com)
 
 [Gerrit's Whip Factory](https://gerritswhipfactory.com) is a web page for Gerrit's Whip Factory to browse and order whips.
 [Github Pages Demo](http://clintonlunn.com/gerrits-whip-factory-2/) is a web page for Gerrit's Whip Factory to browse and order whips.
@@ -8,13 +8,6 @@
 ## Preview
 
 [![Gerrit's Whip Factory](https://github.com/clintonlunn/gerrits-whip-factory-2/blob/master/src/assets/img/about/webpagefront.png)](https://gerritswhipfactory.com)
-## Status
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-agency/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-agency.svg)](https://www.npmjs.com/package/startbootstrap-agency)
-[![Build Status](https://travis-ci.org/StartBootstrap/startbootstrap-agency.svg?branch=master)](https://travis-ci.org/StartBootstrap/startbootstrap-agency)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-agency/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-agency)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-agency/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-agency?type=dev)
 
 ## Download and Installation
 
