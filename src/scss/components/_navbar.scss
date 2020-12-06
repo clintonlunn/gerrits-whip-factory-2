@@ -27,11 +27,11 @@
             .nav-link {
                 font-family: $headings-font-family;
                 font-size: 0.95rem;
-                color: $white;
+                color: $black;
                 letter-spacing: $headings-letter-spacing;
                 &.active,
                 &:hover {
-                    color: $primary;
+                    color: $white;
                 }
             }
         }
@@ -59,7 +59,7 @@
         &.navbar-shrink {
             padding-top: 1rem;
             padding-bottom: 1rem;
-            background-color: $gray-900;
+            background-color: $gray-700;
             .navbar-brand {
                 font-size: 1.25em;
                 svg,
@@ -67,6 +67,7 @@
                     height: 1.5rem;
                 }
             }
+            
         }
         .navbar-nav .nav-item {
             margin-right: 1rem;
