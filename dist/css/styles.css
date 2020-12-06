@@ -10114,13 +10114,19 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
+.strokeme {
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #000;
+  -webkit-text-stroke: ghostwhite;
   background-color: black;
-  background-image: url("../assets/img/header-whip.jpg");
+  background-image: url("../assets/img/dusty.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

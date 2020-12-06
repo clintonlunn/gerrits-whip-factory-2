@@ -1,12 +1,24 @@
 // Styling for the masthead
 
+.strokeme
+{
+    color:black;
+    text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255);
+    
+}
+
 header.masthead {
     padding-top: 6rem + 4.5rem;
     padding-bottom: 6rem;
     text-align: center;
     color: $black;
+    -webkit-text-stroke: ghostwhite;
     background-color: black;
-    background-image: url("../assets/img/header-whip.jpg");
+    background-image: url("../assets/img/dusty.png");
 
     background-repeat: no-repeat;
     background-attachment: scroll;
