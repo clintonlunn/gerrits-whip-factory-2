@@ -13,9 +13,7 @@
 
 Once you are going to put this into your repository:
 
-- Fork this repo
-- Set up gh-pages in the settings of project
-- move project kanban board with [these instructions](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/copying-a-project-board).
+- https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/transferring-a-repository
 
 ## Usage
 
