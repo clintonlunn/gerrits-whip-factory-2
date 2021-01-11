@@ -1,6 +1,6 @@
 /*!
     * Start Bootstrap - Gerrit's Whip Factory v6.0.3 (https://gerrritswhipfactory.com/)
-    * Copyright 2013-2020 Start Bootstrap
+    * Copyright 2013-2021 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
     */
     (function ($) {
