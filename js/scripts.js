@@ -1,6 +1,6 @@
 /*!
     * Start Bootstrap - Gerrit's Whip Factory v6.0.3 (https://gerrritswhipfactory.com/)
-    * Copyright 2013-2020 Start Bootstrap
+    * Copyright 2013-2021 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
     */
     (function ($) {
@@ -54,3 +54,11 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+
+// Drop Down
+$(document).ready( function() {
+    $('.dropdown-toggle').dropdown();
+    });
+
+    $(".selectFilter").on("change",function(){var e=$(this).data("target"),i=$(this).find(":selected").data("ref");$("select."+e).val("-1"),null==i?$("select."+e).find("option").each(function(){console.log("inside undefined"),$(this).removeAttr("disabled hidden")}):$("select."+e).find("option").each(function(){var e=$(this).data("belong"),t=$(this).val();i!=e&&-1!=t?($(this).prop("disabled",!0),$(this).prop("hidden",!0)):($(this).prop("disabled",!1),$(this).prop("hidden",!1))})});
