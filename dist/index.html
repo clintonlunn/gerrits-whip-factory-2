@@ -20,7 +20,14 @@
    
    
     <!-- EmailJS-->
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_HVpmAhurc9ZisS5ItuWgX");
+                })
+                ();
+    </script>
+
 </head>
 
 <body id="page-top">
@@ -367,7 +374,7 @@
                 <script type="text/javascript">
                     (function() {
                         // https://dashboard.emailjs.com/admin/integration
-                        emailjs.init('YOUR_user_HVpmAhurc9ZisS5ItuWgXUSER_ID');
+                        emailjs.init('user_HVpmAhurc9ZisS5ItuWgX');
                     })();
                 </script>
                 <script type="text/javascript">
@@ -386,7 +393,7 @@
                         });
                     }
                 </script>
-                
+
             <body>
                 <form id="contact-form">
                     <input type="hidden" name="contact_number">
