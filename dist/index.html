@@ -19,13 +19,13 @@
     <link href="css/styles.css" rel="stylesheet" />
    
    
-    <!-- EmailJS-->
+    <!-- EmailJS
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript"> (function() {
             emailjs.init("user_HVpmAhurc9ZisS5ItuWgX");
                 })
                 ();
-    </script>
+    </script> -->
 
 </head>
 
@@ -360,7 +360,7 @@
 
 
 <!-- Contact-->
-    <section class="page-section"  id=""-->
+    <section class="page-section"  id="contact"-->
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contact Us</h2>
@@ -369,59 +369,24 @@
             </div>
             
             <title>Contact Form</title>
-                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-                <script type="text/javascript">
-                    (function() {
-                        // https://dashboard.emailjs.com/admin/integration
-                        emailjs.init('user_HVpmAhurc9ZisS5ItuWgX');
-                    })();
-                </script>
-                <script type="text/javascript">
-                    window.onload = function() {
-                        document.getElementById('contact-form').addEventListener('submit', function(event) {
-                            event.preventDefault();
-                            // generate a five digit number for the contact_number variable
-                            this.contact_number.value = Math.random() * 100000 | 0;
-                            // these IDs from the previous steps
-                            emailjs.sendForm('contact_service', 'contact_form', this)
-                                .then(function() {
-                                    console.log('SUCCESS!');
-                                }, function(error) {
-                                    console.log('FAILED...', error);
-                                });
-                        });
-                    }
-                </script>
 
-            <body>
-                <form id="contact-form">
-                    <input type="hidden" name="contact_number">
-                    <label>Name</label>
-                    <input type="text" name="user_name">
-                    <label>Email</label>
-                    <input type="email" name="user_email">
-                    <label>Message</label>
-                    <textarea name="message"></textarea>
-                    <input type="submit" value="Send">
-                </form>
-            </body>
-
-
-            <!-- origional form, with id edited.
+            <!-- origional form, with id edited. -->
                 <form id="contact-form" name="sentMessage" novalidate="novalidate">
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
 
-                        
+                        <div>                    
+                            <input type="hidden" name="contact_number">
+                        </div>
                         <div class="form-group">
-                            <input class="form-control" id="name" type="text" placeholder="Your Name *"
+                            <input class="form-control" id="user_name" name="user_name" type="text" placeholder="Your Name *"
                                 required="required" data-validation-required-message="Please enter your name." />
                             <p class="help-block text-danger"></p>
                         </div>
 
                        
                         <div class="form-group">
-                            <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                            <input class="form-control" id="user_email" name="user_email"type="email" placeholder="Your Email *"
                                 required="required"
                                 data-validation-required-message="Please enter your email address." />
                             <p class="help-block text-danger"></p>
@@ -429,17 +394,17 @@
 
                        
                         <div class="form-group mb-md-0">
-                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                            <input class="form-control" id="user_phone" name="user_phone" type="tel" placeholder="Your Phone *"
                                 required="required"
                                 data-validation-required-message="Please enter your phone number." />
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
-
-                     Message 
+                
+                     <!-- Message  -->
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
-                            <textarea class="form-control" id="message" placeholder="Your Message *" required="required"
+                            <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required="required"
                                 data-validation-required-message="Please enter a message."></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
@@ -450,10 +415,33 @@
                     <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send
                         Message</button>
                 </div>
-            </form>
-            End Form 
+            </form> -->
+            <!-- End Form -->
 
-                -->
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+            <script type="text/javascript">
+                (function() {
+                    // https://dashboard.emailjs.com/admin/integration
+                    emailjs.init('user_HVpmAhurc9ZisS5ItuWgX');
+                })();
+            </script>
+            <script type="text/javascript">
+                window.onload = function() {
+                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+                        console.log(this);
+                        event.preventDefault();
+                        // generate a five digit number for the contact_number variable
+                        this.contact_number.value = Math.random() * 100000 | 0;
+                        // these IDs from the previous steps
+                        emailjs.sendForm('contact_service', 'contact_form', this)
+                            .then(function() {
+                                console.log('SUCCESS!');
+                            }, function(error) {
+                                console.log('FAILED...', error);
+                            });
+                        });
+                }
+                </script>
 
         </div>
     </section>
@@ -1435,8 +1423,8 @@
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
+    <!-- <script src="assets/mail/jqBootstrapValidation.js"></script> -->
+    <!-- <script src="assets/mail/contact_me.js"></script> -->
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
@@ -1446,8 +1434,8 @@
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
+    <!-- <script src="assets/mail/jqBootstrapValidation.js"></script> -->
+    <!-- <script src="assets/mail/contact_me.js"></script> -->
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
