@@ -370,27 +370,28 @@
             
             <title>Contact Form</title>
 
-            <!-- origional form, with id edited. -->
-                <form id="contact-form" name="sentMessage" novalidate="novalidate">
+                <!-- origional form, with id edited. -->
+            <form id="contact-form" name="sentMessage" novalidate="novalidate">
+           
                 <div class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
+                <div class="col-md-6">
 
-                        <div>                    
-                            <input type="hidden" name="contact_number">
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="user_name" name="user_name" type="text" placeholder="Your Name *"
-                                required="required" data-validation-required-message="Please enter your name." />
-                            <p class="help-block text-danger"></p>
-                        </div>
+                    <div>                    
+                        <input type="hidden" name="contact_number">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="user_name" name="user_name" type="text" placeholder="Your Name *"
+                            required="required" data-validation-required-message="Please enter your name." />
+                        <p class="help-block text-danger"></p>
+                    </div>
 
-                       
-                        <div class="form-group">
-                            <input class="form-control" id="user_email" name="user_email"type="email" placeholder="Your Email *"
-                                required="required"
-                                data-validation-required-message="Please enter your email address." />
-                            <p class="help-block text-danger"></p>
-                        </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" id="user_email" name="user_email"type="email" placeholder="Your Email *"
+                            required="required"
+                            data-validation-required-message="Please enter your email address." />
+                        <p class="help-block text-danger"></p>
+                    </div>
 
                        
                         <div class="form-group mb-md-0">
@@ -400,20 +401,39 @@
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
-                
+
+
+
                      <!-- Message  -->
-                    <div class="col-md-6">
+                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
-                            <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required="required"
-                                data-validation-required-message="Please enter a message."></textarea>
+                            <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Button and delay script -->
                 <div class="text-center">
                     <div id="success"></div>
-                    <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send
+                    <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit" value="click me">Send
                         Message</button>
+                    
+                    <script type="text/javascript">
+                        const fewSeconds = 30
+                     
+                        document.querySelector('#sendMessageButton').addEventListener('click', (e) => {
+                            e.target.disabled = true
+                            setTimeout(() => {
+                            e.target.disabled = false
+                            }, fewSeconds * 1000)
+                            })
+                    </script>
+
+
+
+
+
                 </div>
             </form> -->
             <!-- End Form -->
