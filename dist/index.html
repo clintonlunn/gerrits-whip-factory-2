@@ -17,40 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-
-
-
-
-
+    <!-- EmailJS cdn -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_HVpmAhurc9ZisS5ItuWgX');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                console.log("Didn't send!");
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                // emailjs.sendForm('contact_service', 'contact_form', this)
-                //     .then(function() {
-                //         console.log('SUCCESS!');
-                //     }, function(error) {
-                //         console.log('FAILED...', error);
-                //     });
-                
-            });
-        }
-    </script>
-
-
-
-
 
 </head>
 
@@ -391,7 +359,7 @@
                 <h3 class="section-subheading text-muted">Want to order a whip? Have a question? Shoot us a message,
                     we'll get back to you as soon as we can.</h3>
             </div>
-            <form id="contact-form" name="sentMessage" novalidate="novalidate" action="https://formspree.io/f/xyyboykq" method="POST">
+            <form id="contact-form" name="sentMessage" novalidate="novalidate">
                 
                 <!-- Hidden ticket number -->
                 <input type="hidden" name="contact_number">
@@ -437,24 +405,6 @@
 
                     <button class="btn btn-primary btn-xl text-uppercase" type="submit" id="sendMessageButton" >Send
                         Message</button>
-                        
-
-
-                        <!-- Suposidly a script for stopping the button for 30 seconds-->
-                        <!-- <script type="text/javascript">
-                            const fewSeconds = 30
-                     
-                            document.querySelector('#sendMessageButton').addEventListener('click', (e) => {
-                             e.target.disabled = true
-                             setTimeout(() => {
-                            e.target.disabled = false
-                             }, fewSeconds * 1000)
-                                })
-                        </script> -->
-
-
-
-
                 </div>
             </form>
         </div>
