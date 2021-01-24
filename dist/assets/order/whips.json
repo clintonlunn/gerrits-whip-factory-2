@@ -1,0 +1,162 @@
+{
+    "singleColor": {
+        "totalLength": {
+            "4": 125,
+            "5": 150,
+            "6": 200,
+            "8": 300, 
+            "10": 500
+        },
+        "handleLength": {
+            "8": 0,
+            "10": 0,
+            "12": 5
+        },
+        "thong": {
+            "primaryColor": 1
+        },
+        "handle": ["checkerboard", "whipmakersPlait", "birdsEye"],
+        "transitionKnot": {
+            "_comment": "user chooses 1/2 color knot",
+            "colorNum": {
+                "1": {
+                    "colorChoice": ["colorsGoHere"],
+                    "knotStyle": ["herringBow", "twoPassHerringBow"]
+                },
+                "2": {
+                    "colorChoice": ["colorsGoHere"],
+                    "knotStyle": ["herringBow", "twoPassHerringBow"]
+                }
+            }
+        },
+        "heelKnot": {
+            "_comment": "user chooses 1/2 color knot",
+            "colorNum": {
+                "1": {
+                    "colorChoice": ["colorsGoHere"],
+                    "knotStyle": ["herringBow", "twoPassHerringBow"]
+                },
+                "2": {
+                    "colorChoice": ["colorsGoHere"],
+                    "knotStyle": ["herringBow", "twoPassHerringBow"]
+                }
+            }
+        },
+        "waxed": {
+            "yes": true,
+            "no": false
+        }
+    }, 
+    "twoColor": {
+        "totalLength": {
+                "4": 125,
+                "5": 150,
+                "6": 200,
+                "8": 300, 
+                "10": 500
+            },
+            "handleLength": {
+                "8": 0,
+                "10": 0,
+                "12": 5
+            },
+            "thong": {
+                "pattern": ["chevron", "striped", "split", "matchstick", "offsetStrands", "doubleAccent"],
+                "primaryColor": ["colorsGoHere"],
+                "secondary": ["colorsGoHere"]
+            },
+            "handle": { 
+                "_comment": "if split, then all patterns available. else, only whipmakersPlait available",
+                "checkerboard": 0,
+                "whipmakersPlait": 0,
+                "birdsEye": 0,
+                "custom": 75
+            },
+            "transitionKnot": {
+                "_comment": "user chooses 1/2 color knot",
+                "colorNum": {
+                    "1": {
+                        "colorChoice": ["colorsGoHere"],
+                        "knotStyle": ["herringbone", "twoPass", "gauchoFan"]
+                    },
+                    "2": {
+                        "colorChoice": ["colorsGoHere"],
+                        "knotStyle": ["herringbone", "twoPass", "gauchoFan", "pineapple"]
+                    }
+                }
+            },
+            "heelKnot": {
+                "_comment": "user chooses 1/2 color knot",
+                "colorNum": {
+                    "1": {
+                        "colorChoice": ["colorsGoHere"],
+                        "knotStyle": ["herringbone", "twoPass", "gauchoFan"]
+                    },
+                    "2": {
+                        "colorChoice": ["colorsGoHere"],
+                        "knotStyle": ["herringBow", "twoPass", "gauchoFan", "pineapple"]
+                    }
+                }
+            },
+            "waxed": {
+                "yes": true,
+                "no": false
+            }
+    },
+    "threeColor": {
+        "totalLength": {
+            "4": 125,
+            "5": 150,
+            "6": 200,
+            "8": 300, 
+            "10": 500
+        },
+        "handleLength": {
+            "8": 0,
+            "10": 0,
+            "12": 5
+        },
+        "thong": {
+            "pattern": ["threeColorChevron", "threeColorSplit", "threeColorStriped", "splitWithChevron"],
+            "primaryColor": ["colorsGoHere"],
+            "secondary": ["colorsGoHere"],
+            "tertiaryColor": ["colorsGoHere"]
+        },
+        "handle": { 
+            "_comment": "if split, then all patterns available. else, only whipmakersPlait available",
+            "_comment1": "if threeColorStriped, offer twoColorCheckerboard, else only whipmakersPlait",
+            "twoColorCheckerboard": 0, 
+            "whipmakersPlait": 0
+        },
+        "transitionKnot": {
+            "_comment": "user chooses 1/2 color knot",
+            "colorNum": {
+                "1": {
+                    "colorChoice": ["colorsGoHere"],
+                    "knotStyle": ["herringbone", "twoPass", "gauchoFan"]
+                },
+                "2": {
+                    "colorChoice": ["colorsGoHere"],
+                    "knotStyle": ["herringbone", "twoPass", "gauchoFan", "pineapple"]
+                }
+            }
+        },
+        "heelKnot": {
+            "_comment": "user chooses 1/2 color knot",
+            "colorNum": {
+                "1": {
+                    "colorChoice": ["colorsGoHere"],
+                    "knotStyle": ["herringbone", "twoPass", "gauchoFan"]
+                },
+                "2": {
+                    "colorChoice": ["colorsGoHere"],
+                    "knotStyle": ["herringBow", "twoPass", "gauchoFan", "pineapple"]
+                }
+            }
+        },
+        "waxed": {
+            "yes": true,
+            "no": false
+        }
+    }
+}
