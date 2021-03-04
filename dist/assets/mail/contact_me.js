@@ -26,7 +26,7 @@
                     );
                     $("#success > .alert-success").append("</div>");
                     //clear all fields
-                    $("#contact-form").trigger("reset");
+                    $("#contactForm").trigger("reset");
 
                     setTimeout(function () {
                         submitButton.setAttribute("disabled", false); // Re-enable submit button when AJAX call is complete
@@ -50,7 +50,7 @@
                     );
                     $("#success > .alert-danger").append("</div>");
                     //clear all fields
-                    $("#contact-form").trigger("reset");
+                    $("#contactForm").trigger("reset");
                 });
 
             
