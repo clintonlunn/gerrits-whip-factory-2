@@ -406,6 +406,51 @@
         </div>
     </section>
 
+    <!-- Build A Whip-->
+    <section class="page-section" id="build-a-whip">
+        <div class="container">
+            <form name="build-a-whip" action="javascript:void(0)">
+                <h3>Select a Handle Pattern</h3>
+                <label>
+                    <input type="radio" id="handleTypeA" name="handleType" value="handleTypeA"
+                        onchange="updateBuildWhipForm(this.value)" />Type A</label>
+                <label>
+                    <input type="radio" id="handleTypeB" name="handleType" value="handleTypeB"
+                        onchange="updateBuildWhipForm(this.value)" />Type B</label>
+    
+                <div id="thongQuestions" style="display: none;">
+                    <h3>Select a Thong Pattern</h3>
+                    Some thongs are only compatible with certain handles. 
+                    <!--Options for Handle Type A-->
+                    <!-- "display:none;" will hide the question until the scripts change this value -->
+                    <div id="handleTypeAQuestion" style="display:none;"><br />
+                        <label>
+                            <input type="radio" id="thongTypeA" name="thongType" value="thongTypeA"
+                                onchange="updateBuildWhipForm(this.value)" />Thong Type A </label>
+                        <label>
+                            <input type="radio" id="thongTypeB" name="thongType" value="thongTypeB"
+                                onchange="displayQuestion(this.value)" />Thong Type B</label>
+                    </div>
+        
+                    <!--Options for Handle Type B that are different than Type A-->
+                    <div id="handleTypeBQuestion" style="display:none;"><br />
+                        <label>
+                            <input type="radio" id="thongTypeA" name="thongType" value="thongTypeA"
+                                onchange="updateBuildWhipForm(this.value)" />Thong Type A </label>
+                        <label>
+                            <input type="radio" id="thongTypeC" name="thongType" value="thongTypeC"
+                                onchange="displayQuestion(this.value)" />Thong Type C</label>
+                    </div>
+                </div>
+                
+    
+                <br /><br /><input type="submit">
+    
+            </form>
+    
+        </div>
+    </section>
+
      <!-- Contact-->
     <section class="page-section" id="contact">
         <div class="container">
