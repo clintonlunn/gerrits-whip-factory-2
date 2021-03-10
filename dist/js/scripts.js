@@ -62,3 +62,20 @@ $(document).ready( function() {
     });
 
     $(".selectFilter").on("change",function(){var e=$(this).data("target"),i=$(this).find(":selected").data("ref");$("select."+e).val("-1"),null==i?$("select."+e).find("option").each(function(){console.log("inside undefined"),$(this).removeAttr("disabled hidden")}):$("select."+e).find("option").each(function(){var e=$(this).data("belong"),t=$(this).val();i!=e&&-1!=t?($(this).prop("disabled",!0),$(this).prop("hidden",!0)):($(this).prop("disabled",!1),$(this).prop("hidden",!1))})});
+
+// Build a Whip form changes
+function updateBuildWhipForm(answer) {
+
+    document.getElementById('thongQuestions').style.display = "block";
+    document.getElementById(answer + 'Question').style.display = "block";
+
+    if (answer == "handleTypeA") { // hide the div that is not selected
+
+        document.getElementById('handleTypeBQuestion').style.display = "none";
+
+    } else if (answer == "handleTypeB") {
+
+        document.getElementById('handleTypeAQuestion').style.display = "none";
+
+    }
+}
