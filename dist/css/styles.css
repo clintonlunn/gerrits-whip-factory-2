@@ -10173,6 +10173,7 @@ header.masthead .masthead-heading {
   position: relative;
   display: block;
   margin: 0 auto;
+  color: #000000;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
@@ -10257,6 +10258,7 @@ header.masthead .masthead-heading {
   position: relative;
   display: block;
   margin: 0 auto;
+  color: #000c1d;
 }
 #order .order-item .order-link .order-hover {
   display: flex;
